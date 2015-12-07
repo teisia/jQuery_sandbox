@@ -13,5 +13,8 @@
 $("#trigger").click(function() {
   var randd = Math.floor( (Math.random() * 3) );
   $("#container").append('<img src="'+collection["images"][randd]["image_src"]+'" />');
-console.log("meep");
+});
+
+$("#trigger2").click(function() {
+  $("img").addClass("big");
 });
