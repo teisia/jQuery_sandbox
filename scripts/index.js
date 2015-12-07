@@ -8,4 +8,10 @@
 // added and displayed.  Example:  a new add button would change all
 // to display: block in the existing dom and add a new random fox which is
 // also display: block.  Hit the display float button and they all change
-// back to float and it adds a new floated random fox. 
+// back to float and it adds a new floated random fox.
+
+$("#trigger").click(function() {
+  var randd = Math.floor( (Math.random() * 3) );
+  $("#container").append('<img src="'+collection["images"][randd]["image_src"]+'" />');
+console.log("meep");
+});
